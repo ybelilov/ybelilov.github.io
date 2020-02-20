@@ -3,12 +3,12 @@
 	"BuildUrl": "DLC1.0/IOS",
 	"files": [
 		{
-			"filename": "DLCTest_DLCTestDLC1.0.manifest",
-			"uniqueFilename": "DLCTest_DLCTestDLC1.0.manifest",
-			"length": 7669,
-			"URL": "DLCTest_DLCTestDLC1.0.manifest",
-			"hash": "5F46A1431F7701E853970A6A5BAB9E89808808CA",
-			"hash256": "9A314C33D5EC43B0CD4344F9D3C6DB33C9D28601D01FB7F13A1DF9AF93E802CE"
+			"filename": "DLC_Test_DLC_TestDLC1.0.manifest",
+			"uniqueFilename": "DLC_Test_DLC_TestDLC1.0.manifest",
+			"length": 11578,
+			"URL": "DLC_Test_DLC_TestDLC1.0.manifest",
+			"hash": "E8E601B4B98BEB93B9CC1299461C37081F2BF641",
+			"hash256": "08B3B0833CE8E91AB191489EFEBD34A3BF3EBA8ECB0C2A43D79B10B898091F64"
 		}
 	]
 }
