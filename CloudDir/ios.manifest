@@ -3,12 +3,12 @@
 	"BuildUrl": "DLC1.0/IOS",
 	"files": [
 		{
-			"filename": "DLC_Test_DLC_TestDLC1.0.manifest",
-			"uniqueFilename": "DLC_Test_DLC_TestDLC1.0.manifest",
-			"length": 11578,
-			"URL": "DLC_Test_DLC_TestDLC1.0.manifest",
-			"hash": "E8E601B4B98BEB93B9CC1299461C37081F2BF641",
-			"hash256": "08B3B0833CE8E91AB191489EFEBD34A3BF3EBA8ECB0C2A43D79B10B898091F64"
+			"filename": "UCApartments_UCApartmentsDLC1.0.manifest",
+			"uniqueFilename": "UCApartments_UCApartmentsDLC1.0.manifest",
+			"length": 604663,
+			"URL": "UCApartments_UCApartmentsDLC1.0.manifest",
+			"hash": "FF3159FD1DDA95DAF244DF2708B0A55A440095AC",
+			"hash256": "854AB2EF09E22BBA822BC5EB98DC998A33B0F0F8E2E348F6AF0D8C21A43801F2"
 		}
 	]
 }
