@@ -1,0 +1,14 @@
+{
+	"ClientVersion": "DLC1.0",
+	"BuildUrl": "DLC1.0/IOS",
+	"files": [
+		{
+			"filename": "UCApartments_UCApartmentsDLC1.0.manifest",
+			"uniqueFilename": "UCApartments_UCApartmentsDLC1.0.manifest",
+			"length": 604996,
+			"URL": "UCApartments_UCApartmentsDLC1.0.manifest",
+			"hash": "8824B65B96923184C9EB03FA1487E502FC6E513F",
+			"hash256": "A22FB5FB0ABA7D4BB0B435E4AA98C2E4ED9174E8DF312E5B927CDD017C147D32"
+		}
+	]
+}
