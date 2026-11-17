@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>В'єтнам 2027 — карта місць</title>
+  <meta name="description" content="Інтерактивна карта найкращих місць В'єтнаму: Хошимін, Дананг, Хойан, Хюе, Ханой — пам'ятки, вулична їжа, ресторани, бари, приховані перлини.">
+  <meta name="theme-color" content="#0f5c4d">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='50' fill='%23da251d'/><polygon fill='%23ffcd00' points='50,18 58,42 84,42 63,57 71,82 50,67 29,82 37,57 16,42 42,42'/></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Unbounded:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/MarkerCluster.css">
+  <link rel="stylesheet" href="style.css?v=1">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <span class="brand-flag" aria-hidden="true">★</span>
+      <span class="brand-text">
+        <span class="brand-title" data-i18n="title">В'єтнам 2027</span>
+        <span class="brand-sub" data-i18n="subtitle">Карта найкращих місць</span>
+      </span>
+    </div>
+    <label class="search">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg>
+      <input id="search" type="search" autocomplete="off" data-i18n-ph="search">
+    </label>
+    <div class="lang" role="group" aria-label="Language">
+      <button type="button" data-lang="uk">UA</button>
+      <button type="button" data-lang="en">EN</button>
+    </div>
+  </header>
+
+  <main class="layout">
+    <aside class="sidebar" id="sidebar">
+      <div class="filters">
+        <div class="regions" id="regions" role="tablist"></div>
+
+        <div class="chips" id="categories"></div>
+
+        <div class="chips chips-special" id="specials"></div>
+
+        <div class="row-filters">
+          <label class="select">
+            <span data-i18n="rating">Рейтинг</span>
+            <select id="minRating">
+              <option value="0" data-i18n="any">Будь-який</option>
+              <option value="4">4.0+</option>
+              <option value="4.3">4.3+</option>
+              <option value="4.5">4.5+</option>
+              <option value="4.7">4.7+</option>
+            </select>
+          </label>
+          <label class="select">
+            <span data-i18n="price">Ціна</span>
+            <select id="maxPrice">
+              <option value="4" data-i18n="any">Будь-яка</option>
+              <option value="0" data-i18n="free">Безкоштовно</option>
+              <option value="1">₫</option>
+              <option value="2">≤ ₫₫</option>
+              <option value="3">≤ ₫₫₫</option>
+            </select>
+          </label>
+          <label class="select">
+            <span data-i18n="sort">Сортування</span>
+            <select id="sort">
+              <option value="rating" data-i18n="sortRating">За рейтингом</option>
+              <option value="name" data-i18n="sortName">За назвою</option>
+              <option value="distance" data-i18n="sortDistance">Найближчі</option>
+            </select>
+          </label>
+        </div>
+
+        <div class="summary">
+          <span id="count"></span>
+          <button type="button" class="link-btn" id="reset" data-i18n="reset">Скинути фільтри</button>
+        </div>
+      </div>
+
+      <ul class="list" id="list"></ul>
+    </aside>
+
+    <section class="map-wrap">
+      <div id="map" aria-label="Map"></div>
+      <button type="button" class="fab fab-locate" id="locate" data-i18n-title="nearMe">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3.5"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/><circle cx="12" cy="12" r="7.5"/></svg>
+      </button>
+    </section>
+
+    <button type="button" class="view-toggle" id="viewToggle"></button>
+
+    <article class="detail" id="detail" aria-hidden="true">
+      <button type="button" class="detail-close" id="detailClose" aria-label="Close">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
+      </button>
+      <div class="detail-body" id="detailBody"></div>
+    </article>
+  </main>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/leaflet.markercluster.js"></script>
+  <script src="places.js?v=1"></script>
+  <script src="app.js?v=1"></script>
+</body>
+</html>
